@@ -1,0 +1,25 @@
+GET http://localhost:5089/tasks/
+
+###
+
+POST http://localhost:5089/todos
+Content-Type: application/json
+
+{
+  "Name": "hi",
+  "DueDate": "2026-10-02",
+  "IsCompleted": false
+}
+
+###
+Put http://localhost:5089/todos/1
+Content-Type: application/json
+
+{
+  "Name": "df",
+  "DueDate": "2027-10-02",
+  "isCompleted": false
+}
+
+###
+DELETE http://localhost:5089/todos/2
